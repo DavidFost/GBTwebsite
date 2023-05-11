@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/homepage.css">
+    <meta charset="UTF-8">
+    <title>Greater Bethlehem Temple Church</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="../static/images/logo.png" class="nav-logo"></a>
+        <input type = "checkbox" id = "nav-toggle" class = "nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Give</a></li>
+                <li><a href="#">Connect</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About US</a></li>
+             </ul>
+        </nav>
+        <label for = "nav-toggle" class = "nav-toggle-label">
+        <span></span>
+        </label>
+    </header>
+    <video autoplay loop muted playsinline class ="back-video">
+        <source src="{{url_for('static', filename='videos/background-vid.mp4')}}" linear type="video/mp4">
+    </video>
+</body>
+</html>
