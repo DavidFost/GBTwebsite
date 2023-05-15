@@ -25,4 +25,4 @@ I found that chatGPT and youtube were the quickest learning tools for the basics
 https://developer.mozilla.org/en-US/docs/Web/CSS/padding. You will probably have the most trouble with css as html is pretty straight-forward. 
 
 
-
+INSTALL FLASK IN ORDER TO RUN THE WEB-SERVER
