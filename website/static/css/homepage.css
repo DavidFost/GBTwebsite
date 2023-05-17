@@ -9,6 +9,7 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+
 }
 
 header{
@@ -124,7 +125,7 @@ nav a:hover{
 .video-container {
   position: relative;
   width: 100%;
-  height: 826px;
+  height: 500px;
 }
 
 /* Style the video element to cover the entire container */
@@ -140,10 +141,97 @@ nav a:hover{
 }
 
 .bottom-menu-container{
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    background: var(--burgundy);
+}
+
+.bottom-menu{
     display: none;
 }
 
+.floating-buttons-container{
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 
+    }
+
+.floating-buttons{
+    padding: 0px;
+    width: 355px;
+    height: 150px;
+    }
+
+.floating-buttons ul{
+    width: 100%;
+    display: block;
+    padding: 0;
+
+    }
+
+.floating-buttons li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    background: rgba(122,59,59,.5);
+    width: 200px;
+
+    }
+
+.floating-buttons a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    }
+
+.floating-buttons-container li:hover {
+    background: grey;
+    transition: background-color 0.5s ease; /* Change duration value to make the transition slower or faster */
+    }
+
+.splash-image-container{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.splash-image img{
+    width: 150px;
+    height: 150px;
+}
 
 @media screen and (min-width: 769px){
 
@@ -231,6 +319,8 @@ nav a:hover{
           top: auto;
           width: 100%;
           height: 706px;
+        /*overflow: none; fixes scroll into whitespace - might be a problem - to fix (delete and set widths to 100%)*/
+
         }
 
         /* Style the video element to cover the entire container */
@@ -247,7 +337,7 @@ nav a:hover{
 
         .bottom-menu-container{
             width: 100%;
-            height: 50px;
+            height: 70px;
             position: absolute;
             bottom: 0px;
             display: flex;
@@ -256,43 +346,120 @@ nav a:hover{
             justify-content: center;
             align-items: center;
             gap: 20px;
-            border: 1px solid black;
-            padding: 10px;
+            padding: 0px;
+            margin: 0px;
             background: rgba(0,0,0,.25);
 
         }
 
         .bottom-menu{
             padding: 0px;
+            width: 521px;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
 
         }
 
         .bottom-menu ul{
-
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
         }
 
         .bottom-menu li{
-            width: 100px;
-            background-color: #F8F8F8;
-            padding: 20px;
+            padding: 0px;
             display: inline-block;
             margin-right: 0px;
             margin-left: 0px;
 
         }
 
-        .bottom-menu-container li:last-child {
-
-            margin-right: 0;
-        }
-
         .bottom-menu a{
-            color: #333333;
+            color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 20px;
+            text-transform: uppercase;
+            white-space: nowrap;
+
         }
         .bottom-menu-container a:hover {
-            color: #FF0000;
+            color: var(--burgundy);
+        }
+        .floating-buttons-container{
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 100px;
+            display: flex;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+
+        }
+
+        .floating-buttons{
+            padding: 0px;
+            width: 790px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .floating-buttons ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+        }
+
+        .floating-buttons li{
+            padding: 10px;
+            display: inline-block;
+            margin-right: 0px;
+            margin-left: 0px;
+            background: rgba(122,59,59,.5);
+            width: 335px;
+
+        }
+
+        .floating-buttons a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+        }
+        .floating-buttons-container li:hover {
+            background: grey;
+            transition: background-color 0.5s ease; /* Change duration value to make the transition slower or faster */
+
+        }
+
+        .splash-image-container{
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            bottom: 400px;
+            display: flex;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .splash-image img{
+            width: 210px;
+            height: 210px;
         }
 
 }
