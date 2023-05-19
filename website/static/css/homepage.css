@@ -165,7 +165,6 @@ nav a:hover{
     height: 0px;
     position: absolute;
     bottom: 100px;
-    display: flex;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -233,6 +232,69 @@ nav a:hover{
     height: 150px;
 }
 
+.grid-backdrop{
+    background: var(--burgundy);
+    display: grid;
+    place-items: center;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 361px;
+    grid-template-rows: 527px;
+    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+.grid > div{
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
+     padding: 10px;
+     background: white;
+     height: 527px;
+     }
+
+.placeholder-img{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 319px;
+    height: 311px;
+    border-style: solid;
+    position: relative;
+    top: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider{
+    width: 319px;
+    position: relative;
+    top: 20px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 4px solid var(--burgundy);
+    border-radius: 5px;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  top: 10px;
+  margin: 0px;
+}
+
+p {
+  position: relative;
+  top: 25px;
+  margin: 0px;
+  padding: 10px;
+  text-align: justify;
+}
 @media screen and (min-width: 769px){
 
         header{
@@ -462,5 +524,33 @@ nav a:hover{
             height: 210px;
         }
 
+        .grid-backdrop{
+            background: var(--burgundy);
+            display: grid;
+            place-items: center;
+        }
+
+        .grid{
+            display: grid;
+            grid-row-gap: 50px;
+            grid-column-gap: 25px;
+            grid-template-columns: repeat(2, 361px);
+            grid-template-rows: repeat(2, 527px);
+
+        }
+
+
+        .grid > div{
+            padding: 10px;
+            background: white;
+            margin-top: 20px
+        }
+        @media screen and (min-width: 1150px){
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3, 361px);
+                grid-template-rows: repeat(3, 527px);
+                }
+        }
 }
 
