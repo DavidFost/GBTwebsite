@@ -321,19 +321,48 @@ h4{
 }
 
 .footer-links{
-    display: inline-block;
+    display: none;
+}
+.footer-links-mobile{
+    display: block;
+    margin-top: 30px;
+}
 
-    position: absolute;
-    top: 6300px;
+
+
+.footer-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo{
     width: 40%;
+
+}
+h4{
+   color: black;
+   font-size: 24px;
+   font-weight: 400;
+   text-align: center;
+   margin: 0px;
+   margin-top: 50px;
+   padding: 0px;
+   }
+
+.column p{
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
 }
 
 .socials{
             display: flex;
-            width: 200px;
+            width: 100%;
             position: relative;
             justify-content: center;
             align-items: center;
@@ -800,6 +829,9 @@ h4{
             margin: 0px;
             margin-top: 20px;
             padding: 0px;
+        }
+        .footer-links-mobile{
+            display: none;
         }
 
 }
