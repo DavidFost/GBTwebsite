@@ -163,20 +163,61 @@ nav a:hover{
 }
 
 .bckgrnd-image{
-    opacity: .8;
+    opacity: 1;
 }
+
 .bckgrnd-image-container{
-    background-color: var(--burgundy);
     height: 475px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.Title-text-container{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+.Body-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+.Body-text-container p{
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Title-text-container h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 72px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .bckgrnd-image-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.shade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(122,59,59, .15);
+    z-index: 1;
 }
 
 
