@@ -716,7 +716,7 @@ h4{
             text-decoration: none;
             color: white;
             text-align: center;
-            margin: 0px
+            margin: 0px;
             padding: 0px;
         }
 
@@ -736,7 +736,7 @@ h4{
             }
         .footer-logo-container{
             all: unset;
-            padding: 0px
+            padding: 0px;
             margin: 0px;
             display: flex;
             justify-content: center;
@@ -749,14 +749,14 @@ h4{
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0px
+            padding: 0px;
             width: auto;
             height: 120px;
             margin: 0px;
         }
 
         .column {
-              all: unset
+              all: unset;
               padding: 20px;
               text-align: center;
               color: white;
@@ -771,7 +771,7 @@ h4{
             top: 10px;
             color: white;
             text-align: center;
-            margin: 0px
+            margin: 0px;
             padding: 0px;
             font-weight: 100;
         }
