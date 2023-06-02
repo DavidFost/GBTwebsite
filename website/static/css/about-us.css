@@ -1,0 +1,268 @@
+:root{
+    --nav-color: black;
+    --nav-color2: rgb(223,213,213);
+    --burgundy: rgb(122,59,59);     /*(86,0,34)*/
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+header{
+    background: var(--nav-color);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    height: 80px;
+}
+
+.header1{
+    width: 100%;
+    height: 80px;
+}
+
+
+
+
+.nav-logo-container{
+    width: 100%;
+}
+
+.nav-logo{
+    width: auto;
+    height: 80px;
+
+}
+
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--nav-color);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover{
+    color: var(--burgundy);
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden; /* Enable vertical scrolling if the content overflows */
+  
+  }
+  
+  /* Style the video element to cover the entire container */
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  
+  }
+  .splash-image-container{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.splash-image img{
+    width: 150px;
+    height: 150px;
+}
+
+.bckgrnd-image{
+    opacity: .8;
+}
+.bckgrnd-image-container{
+    background-color: var(--burgundy);
+    height: 475px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bckgrnd-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media screen and (min-width: 769px){
+
+        header{
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .nav-toggle-label{
+            display: none;
+        }
+
+        .nav-logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 7.5%;
+            margin-right: 4em;
+
+        }
+
+        .nav-logo {
+            all: unset;
+            width: auto;
+            height: 120px;
+            margin-right: 0px;
+            margin-left: 0px;
+
+        }
+
+        nav {
+            all: unset;
+            display: flex;
+            align-items: center;
+
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li{
+            all: unset;
+            margin-left: 2em;
+            margin-right: 2em;
+
+        }
+
+        nav a{
+            opacity: 1;
+            position: relative;
+            font-size: 16px;
+
+        }
+
+        nav a::before{
+            content: '';
+            display: block;
+            height: 1px;
+            background: white;
+            position: absolute;
+            top: 1.75em;
+            left: 0;
+            right: 0;
+            transform: scale(0,1);
+            transition: transform ease-in-out 250ms;
+        }
+
+        nav a:hover::before{
+            transform: scale(1,1);
+        }
+
+
+
+}
+
