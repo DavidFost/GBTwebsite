@@ -9,6 +9,7 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+
 }
 
 header{
@@ -18,6 +19,7 @@ header{
     text-align: center;
     z-index: 99;
     height: 80px;
+
 }
 
 
@@ -86,6 +88,7 @@ nav a{
     color: white;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 100;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -121,6 +124,61 @@ nav a:hover{
 }
 
 
+h4{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links{
+    display: none;
+}
+.footer-links-mobile{
+    display: block;
+    margin-top: 30px;
+}
+
+
+
+.footer-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo{
+    width: 40%;
+
+}
+h4{
+   color: black;
+   font-size: 24px;
+   font-weight: 400;
+   text-align: center;
+   margin: 0px;
+   margin-top: 50px;
+   padding: 0px;
+   }
+
+.column p{
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.socials{
+            display: flex;
+            width: 100%;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
 
 @media screen and (min-width: 769px){
 
@@ -204,6 +262,127 @@ nav a:hover{
         }
 
 
+
+        h3{
+            color: white;
+            font-size: 48px;
+            font-weight: 300;
+            text-align: center;
+            padding-left: 38px;
+            padding-right: 38px;
+            padding-top: 10px;
+
+        }
+
+
+        .footer-container {
+              all: unset;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              background: rgb(47,46,46);
+              overflow: hidden; /* Enable vertical scrolling if the content overflows */
+
+            }
+        .footer-logo-container{
+            all: unset;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+        }
+        .footer-logo{
+            all: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            width: auto;
+            height: 120px;
+            margin: 0px;
+        }
+
+        .column {
+              all: unset;
+              padding: 20px;
+              text-align: center;
+              color: white;
+              margin-bottom: 50px;
+              margin-left: 75px;
+              margin-right: 75px;
+
+            }
+
+        .column p{
+            position: relative;
+            top: 10px;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            font-weight: 100;
+        }
+
+        @media screen and (max-width: 1150px){
+            .column {
+              display: none;
+
+            }
+            .footer-divider{
+                display: none;
+            }
+        }
+        .footer-divider {
+              position: relative;
+              top: 25px;
+              width: 0px;
+              height: 175px;
+              background-color: black;
+              border: 1px dotted white;
+
+            }
+
+        .socials{
+            all: unset;
+            display: flex;
+            width: 200px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-logo{
+            all: unset;
+            display: flex;
+            width: 100%;
+        }
+
+        .footer-links{
+            all: unset;
+            margin-left: 100px;
+            margin-right: 100px;
+
+        }
+        .footer-links p{
+            color: white;
+            font-size: 12px;
+        }
+
+        h4{
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0px;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        .footer-links-mobile{
+            display: none;
+        }
 
 }
 
