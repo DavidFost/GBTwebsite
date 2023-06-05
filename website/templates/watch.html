@@ -37,6 +37,7 @@
         </div>
     </div>
     <div class="watch-logos">
+            <h5>Subscribe to GBTnews and Connect with us on Facebook</h5>
             <div class="watch-socials">
                 <a href="/" class="watch-logo-container"><img src="../static/images/fb.png" class="watch-logo"></a>
                 <a href="/" class="watch-logo-container"><img src="../static/images/twitt.png" class="watch-logo"></a>
@@ -45,16 +46,17 @@
             </div>
     </div>
 
-    <h4>Subscribe on YouTube and Connect with us on Facebook</h4>
+    <div class="player-container">
+        <div id="player"></div>
+    </div>
 
-    <div id="player"></div>
     <script>
           function onYouTubeIframeAPIReady() {
             // Create the YouTube player
             new YT.Player('player', {
               height: '360', // Set the desired height
               width: '640',  // Set the desired width
-              videoId: W2fpKbj3eM4, // Replace with the actual video ID
+              videoId: 'W2fpKbj3eM4', // Replace with the actual video ID
               events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
