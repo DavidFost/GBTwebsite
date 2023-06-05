@@ -2,27 +2,117 @@
 <html lang="en">
 <head>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-
-<!--    <link rel="stylesheet" href="../static/css/homepage.css"> link css file-->
+    <link rel="stylesheet" href="../static/css/watch.css">
     <meta charset="UTF-8">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <title>Greater Bethlehem Temple Church</title>
 </head>
 <body>
     <header>
-        <a href="/"><img src="../static/images/logo.png" class="nav-logo"></a>
-        <input type = "checkbox" id = "nav-toggle" class = "nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="#">Watch</a></li>
-                <li><a href="#">Give</a></li>
-                <li><a href="#">Connect</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About US</a></li>
-             </ul>
-        </nav>
-        <label for = "nav-toggle" class = "nav-toggle-label">
-        <span></span>
-        </label>
+        <div class="menu">
+            <a href="/" class="nav-logo-container"><img src="../static/images/white_logo.png" class="nav-logo"></a>
+            <input type = "checkbox" id = "nav-toggle" class = "nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Give</a></li>
+                    <li><a href="#">Connect</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About US</a></li>
+                </ul>
+            </nav>
+            <label for = "nav-toggle" class = "nav-toggle-label">
+            <span></span>
+            </label>
+        </div>
     </header>
+
+    <div class="banner">
+        <img src="../static/images/zoom.jpg" class="zoom-img">
+        <div class="splash-container">
+            <img src="../static/images/logo.png" class="splash-img">
+        </div>
+        <div class="banner-msg">
+            <h2>Staying Spiritually Connected while being Physically Distant</h2>
+        </div>
+    </div>
+    <div class="watch-logos">
+            <div class="watch-socials">
+                <a href="/" class="watch-logo-container"><img src="../static/images/fb.png" class="watch-logo"></a>
+                <a href="/" class="watch-logo-container"><img src="../static/images/twitt.png" class="watch-logo"></a>
+                <a href="/" class="watch-logo-container"><img src="../static/images/yt.png" class="watch-logo"></a>
+                <a href="/" class="watch-logo-container"><img src="../static/images/insta.png" class="watch-logo"></a>
+            </div>
+    </div>
+
+    <h4>Subscribe on YouTube and Connect with us on Facebook</h4>
+
+    <div id="player"></div>
+    <script>
+          function onYouTubeIframeAPIReady() {
+            // Create the YouTube player
+            new YT.Player('player', {
+              height: '360', // Set the desired height
+              width: '640',  // Set the desired width
+              videoId: W2fpKbj3eM4, // Replace with the actual video ID
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+
+          // The API will call this function when the video player is ready
+          function onPlayerReady(event) {
+            event.target.playVideo();
+          }
+
+          // The API calls this function when the player's state changes
+          function onPlayerStateChange(event) {
+            // You can perform actions based on the player's state here
+          }
+    </script>
+
+
+      <div class="footer-container">
+    <div class="column">
+      <h4>SERVICE TIMES</h4>
+      <p>SUNDAY WORSHIP SERVICE<br>IN-PERSON & VIRTUAL<br>11AM (CST)</p>
+      <p>BIBLE CLASS<br>IN-PERSON & VIRTUAL<br>7:00PM (CST)</p>
+    </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-links">
+                <a href="/" class="footer-logo-container"><img src="../static/images/logo.png" class="footer-logo"></a>
+            <div class="socials">
+                <a href="/" class="footer-logo-container"><img src="../static/images/fb.webp" class="social-logo"></a>
+                <a href="/" class="footer-logo-container"><img src="../static/images/twitter.webp" class="social-logo"></a>
+                <a href="/" class="footer-logo-container"><img src="../static/images/yt.webp" class="social-logo"></a>
+                <a href="/" class="footer-logo-container"><img src="../static/images/insta.webp" class="social-logo"></a>
+            </div>
+            <p>© 2023 Greater Bethlehem Temple</p>
+        </div>
+
+        <div class="footer-divider"></div>
+
+
+    <div class="column">
+      <h4>ADDRESS</h4>
+      <p>1505 ROBINSON STREET<br>JACKSON, MS 39203</p>
+      <p>601-354-2599 (Office)<br>GBTNEWS@GBTCHURCH.ORG</p>
+    </div>
+    <div class="footer-links-mobile">
+                <a href="/" class="footer-logo-container"><img src="../static/images/logo.png" class="footer-logo"></a>
+            <div class="socials">
+                <a href="/" class="footer-logo-container"><img src="../static/images/fb.webp" class="social-logo"></a>
+                <a href="/" class="footer-logo-container"><img src="../static/images/twitter.webp" class="social-logo"></a>
+                <a href="/" class="footer-logo-container"><img src="../static/images/yt.webp" class="social-logo"></a>
+                <a href="/" class="footer-logo-container"><img src="../static/images/insta.webp" class="social-logo"></a>
+            </div>
+            <p>© 2023 Greater Bethlehem Temple</p>
+    </div>
+  </div>
+
 </body>
 </html>
