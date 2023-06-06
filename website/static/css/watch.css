@@ -210,12 +210,14 @@ h5{
     width: 100%;
     height: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .player {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -382,6 +384,53 @@ h4{
             padding-right: 38px;
             padding-top: 10px;
 
+        }
+
+
+        .banner{
+            width: 100%;
+            height: 326px;
+        }
+
+        .splash-container{
+            position: relative;
+            top: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .splash-img{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .banner-msg h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 45px;
+        }
+
+        .player-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            margin-left: 0px;
+        }
+
+        .player {
+          width: 100%;
         }
 
 
