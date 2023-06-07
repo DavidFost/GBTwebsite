@@ -2,6 +2,8 @@
     --nav-color: black;
     --nav-color2: rgb(223,213,213);
     --burgundy: rgb(122,59,59);     /*(86,0,34)*/
+    --grey: rgb(230, 223, 223);
+    --grey1: rgb(174, 158,158);
 
 }
 
@@ -124,6 +126,109 @@ nav a:hover{
 
 }
 
+.banner {
+  position: relative;
+  width: 100%;
+  height: 263px;
+  background: rgba(122,59,59,0.5);
+  overflow: hidden; /* Enable vertical scrolling if the content overflows */
+
+}
+
+.zoom-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.splash-container{
+    position: relative;
+    top: 85px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-img{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.banner-msg{
+    position: relative;
+    top: 65px;
+    text-align: center;
+}
+
+.banner-msg h2{
+    color: white;
+    font-weight: 400;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+h5{
+   color: black;
+   font-size: 24px;
+   font-weight: 400;
+   text-align: center;
+   margin: 0px;
+   margin-bottom: 10px;
+   margin-top: 25px;
+   padding: 0px;
+}
+.watch-logos{
+    display: block;
+    margin-top: 30px;
+
+}
+
+.watch-socials{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-logo{
+    display: flex;
+    width: 50px;
+    margin: 10px;
+    }
+
+.player-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.player {
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 h4{
     position: relative;
@@ -139,9 +244,6 @@ h4{
 .footer-links-mobile{
     display: block;
     margin-top: 30px;
-    color: black;
-    font-weight: 300;
-    text-align: center;
 }
 
 
@@ -183,6 +285,12 @@ h4{
             justify-content: center;
             align-items: center;
         }
+
+.footer-links-mobile{
+        color: black;
+        font-weight: 300;
+        text-align: center;
+}
 
 @media screen and (min-width: 769px){
 
@@ -276,6 +384,53 @@ h4{
             padding-right: 38px;
             padding-top: 10px;
 
+        }
+
+
+        .banner{
+            width: 100%;
+            height: 326px;
+        }
+
+        .splash-container{
+            position: relative;
+            top: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .splash-img{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .banner-msg h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 45px;
+        }
+
+        .player-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            margin-left: 0px;
+        }
+
+        .player {
+          width: 100%;
         }
 
 
