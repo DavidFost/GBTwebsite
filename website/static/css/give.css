@@ -135,15 +135,60 @@ nav a:hover{
     top: 80px;
     width: 100%;
     height: 150px;
-    overflow: hidden;
 }
 
 .mobile-banner img{
     width: 100%;
+    height: 100%;
 }
 
+.mob-floating-button-container{
+    width: 100%;
+    height: 0px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mob-floating-button{
+    padding: 0px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
 
+}
+.mob-floating-button ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
 
+        }
+
+        .mob-floating-button li{
+            padding: 10px;
+            display: inline-block;
+            margin-right: 0px;
+            margin-left: 0px;
+            background: var(--burgundy);
+            width: 200px;
+
+        }
+
+        .mob-floating-button a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+        }
+        .mob-floating-button-container li:hover {
+            background: grey;
+            transition: background-color 0.5s ease; /* Change duration value to make the transition slower or faster */
+
+        }
 .banner-h-container{
     position: relative;
     display: flex;
@@ -201,7 +246,6 @@ h5{
 
 .grid-backdrop{
     position: relative;
-    top: 80px;
     background: var(--burgundy);
     display: grid;
     place-items: center;
@@ -212,6 +256,16 @@ h5{
     background: var(--burgundy);
     height: 80px;
 }
+.buffer{
+        width: 100%;
+        height: 25px;
+        background: var(--burgundy);
+}
+.blk-buffer{
+            width: 100%;
+            height: 25px;
+            background: var(--grey);
+        }
 .grid{
     display: grid;
     grid-template-columns: 361px;
@@ -290,19 +344,31 @@ h5{
     top: 10px;
     margin-bottom: 20px;
 }
+.pledge-container h2{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 .pledge-container p{
-    width: 70%;
+    width: 90%;
     font-size: 18px;
-    margin: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 75px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .address{
-    position: relative;
-    top: 80px;
     margin: 25px;
+    margin-top: 150px;
 }
 
 
@@ -532,6 +598,10 @@ h4{
             width: 75%;
         }
 
+        .mob-floating-button-container{
+            display: none;
+        }
+
         .floating-button-container{
             width: 100%;
             height: 50px;
@@ -600,7 +670,11 @@ h4{
         .offering-img{
             width: 100%;
         }
-
+        .blk-buffer{
+            width: 100%;
+            height: 25px;
+            background: black;
+        }
         .buffer{
             width: 100%;
             height: 25px;
@@ -680,7 +754,9 @@ h4{
             font-size: 28px;
             width: 100%;
         }
-
+        .pledge-container p{
+            width: 80%;
+        }
         .mobile-banner{
             display: none;
         }
