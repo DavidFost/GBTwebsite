@@ -127,54 +127,61 @@ nav a:hover{
 }
 
 .banner {
-  position: relative;
-  width: 100%;
-  height: 263px;
-  background: rgba(122,59,59,0.5);
-  overflow: hidden; /* Enable vertical scrolling if the content overflows */
-
+  display: none;
 }
 
-.zoom-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.splash-container{
+.mobile-banner{
     position: relative;
-    top: 85px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    top: 80px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
 }
 
-.splash-img{
+.mobile-banner img{
+    width: 100%;
+}
+
+
+
+.banner-h-container{
+    position: relative;
     display: flex;
+    width: 90%;
+    margin: 0;
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 125px;
-    width: 125px;
+
+}
+
+
+.banner-h-container h2{
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+
 }
 
 .banner-msg{
     position: relative;
-    top: 65px;
+    top: 150px;
+    display: flex;
+    width: 100%;
+    margin: 0;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
 }
 
-.banner-msg h2{
+.banner-msg p{
     color: white;
-    font-weight: 400;
+    font-weight: 200;
     margin: 5px;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 h5{
@@ -187,55 +194,116 @@ h5{
    margin-top: 25px;
    padding: 0px;
 }
-.watch-logos{
-    display: block;
-    margin-top: 30px;
 
+.offering-container{
+    display: none;
 }
 
-.watch-socials{
-    display: flex;
-    width: 100%;
+.grid-backdrop{
     position: relative;
-    justify-content: center;
-    align-items: center;
-}
+    top: 80px;
+    background: var(--burgundy);
+    display: grid;
+    place-items: center;
+    height: auto;
 
-.watch-logo{
-    display: flex;
-    width: 50px;
-    margin: 10px;
+}
+.more-grid-backdrop{
+    background: var(--burgundy);
+    height: 80px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 361px;
+    grid-template-rows: 527px;
+    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
     }
 
-.videoWrapper {
-          position: relative;
-          padding-bottom: 56.25%; /* 16:9 */
-          height: 0;
-        }
 
-.videoWrapper iframe {
-          position: absolute;
-          top: 0;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          width: 90%;
-          height: 90%;
-        }
+.grid > div{
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
+     padding: 10px;
+     background: white;
+     height: 527px;
+     }
 
-.buffer{
-            width: 100%;
-            height: 25px;
-            background: var(--burgundy);
-        }
+.placeholder-img{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 319px;
+    height: 311px;
+    border: 3px solid var(--burgundy);
+    position: relative;
+    top: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.placeholder-lsa {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 319px;
+    height: 175px;
+    border: 3px solid var(--burgundy);
+    position: relative;
+    top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
+.card-divider{
+    width: 319px;
+    position: relative;
+    top: 20px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 4px solid var(--burgundy);
+    border-radius: 5px;
+}
 
+.pledge-divider{
+    width: 319px;
+    position: relative;
+    top: -10px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 4px solid var(--burgundy);
+    border-radius: 5px;
+}
 
+.pledge-container img{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+}
 
+.pledge-container p{
+    width: 70%;
+    font-size: 18px;
+    margin: 25px;
+    margin-bottom: 75px;
 
+}
 
+.address{
+    position: relative;
+    top: 80px;
+    margin: 25px;
+}
 
 
 h4{
@@ -300,7 +368,7 @@ h4{
         text-align: center;
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 820px){
 
         header{
             position: static;
@@ -395,36 +463,142 @@ h4{
         }
 
 
-        .banner{
+        .banner {
+          all: unset;
+          background: rgba(122,59,59,0.5);
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .giving-img{
+          all: unset;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -2;
+          object-position: 0px -50px;
+
+        }
+
+        .banner-h-container{
+            all: unset;
+            position: relative;
+            top: -15px;
+            display: flex;
             width: 100%;
-            height: 326px;
-        }
-
-        .splash-container{
-            position: relative;
-            top: 10px;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
             margin: 0;
-        }
-
-        .splash-img{
-            display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
-            height: 200px;
-            width: 200px;
+
         }
 
-        .banner-msg h2{
+
+        .banner-h-container h2{
+            all: unset;
+            color: white;
+            font-weight: 400;
+            font-size: 28px;
+            width: 50%;
+
+        }
+
+        .banner-msg{
+            all: unset;
+            display: flex;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .banner-msg p{
+            all: unset;
+            color: white;
+            font-weight: 300;
+            margin: 5px;
+            margin-top: 10px;
+            font-size: 24px;
+            width: 75%;
+        }
+
+        .floating-button-container{
+            width: 100%;
+            height: 50px;
+            position: relative;
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
-            bottom: 45px;
+
+        }
+
+        .floating-button{
+            padding: 0px;
+            margin-top: 75px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .floating-button ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+        }
+
+        .floating-button li{
+            padding: 10px;
+            display: inline-block;
+            margin-right: 0px;
+            margin-left: 0px;
+            background: rgba(122,59,59,.5);
+            width: 300px;
+
+        }
+
+        .floating-button a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+        }
+        .floating-button-container li:hover {
+            background: grey;
+            transition: background-color 0.5s ease; /* Change duration value to make the transition slower or faster */
+
+        }
+
+        .address{
+            all: unset;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .offering-container{
+            all: unset;
+            max-width: 50%;
+        }
+
+        .offering-img{
+            width: 100%;
         }
 
         .buffer{
@@ -433,24 +607,83 @@ h4{
             background: var(--burgundy);
         }
 
-
-        .videoWrapper {
-          position: relative;
-          padding-bottom: 56.25%; /* 16:9 */
-          height: 0;
+        .address p {
+            font-size: 18px;
+            width: 40%;
+            margin: 25px;
         }
 
-        .videoWrapper iframe {
-          position: absolute;
-          top: 0;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          width: 90%;
-          height: 90%;
+        .grid-backdrop{
+            background: var(--burgundy);
+            display: grid;
+            place-items: center;
+            height: 2000px;
         }
 
+        .grid{
+            display: grid;
+            grid-row-gap: 50px;
+            grid-column-gap: 25px;
+            grid-template-columns: repeat(2, 361px);
+            grid-template-rows: repeat(2, 527px);
+
+        }
+
+        .grid h2{
+            position: relative;
+            text-align: center;
+            top: 10px;
+            margin: 0px;
+            font-weight: 450;
+        }
+
+        .grid p{
+            position: relative;
+            top: 25px;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .grid > div{
+            padding: 10px;
+            background: white;
+            margin-top: 20px
+        }
+
+        @media screen and (min-width: 1150px){
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3, 361px);
+                grid-template-rows: repeat(3, 527px);
+                }
+            .grid-backdrop{
+                height: 1200px;
+            }
+        }
+
+        .pledge-container{
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .pledge-container h2{
+            color: black;
+            font-weight: 400;
+            font-size: 28px;
+            width: 100%;
+        }
+
+        .mobile-banner{
+            display: none;
+        }
 
         .footer-container {
               all: unset;
@@ -509,6 +742,9 @@ h4{
 
             }
             .footer-divider{
+                display: none;
+            }
+            .mobile-banner{
                 display: none;
             }
         }
