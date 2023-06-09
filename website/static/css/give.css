@@ -699,7 +699,6 @@ h4{
             grid-row-gap: 50px;
             grid-column-gap: 25px;
             grid-template-columns: repeat(2, 361px);
-            grid-template-rows: repeat(2, 527px);
 
         }
 
@@ -730,7 +729,6 @@ h4{
             .grid{
                 display: grid;
                 grid-template-columns: repeat(3, 361px);
-                grid-template-rows: repeat(3, 527px);
                 }
             .grid-backdrop{
                 height: 1200px;
