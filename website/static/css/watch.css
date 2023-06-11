@@ -135,7 +135,7 @@ nav a:hover{
 
 }
 
-.zoom-img{
+.banner-img{
     position: absolute;
     top: 0;
     left: 0;
@@ -143,6 +143,7 @@ nav a:hover{
     height: 100%;
     object-fit: cover;
     z-index: -2;
+
 }
 
 .splash-container{
