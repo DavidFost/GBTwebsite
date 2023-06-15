@@ -264,7 +264,7 @@ h4{
 }
 
 .footer-logo{
-    width: 40%;
+    width: 20%;
 
 }
 h4{
@@ -479,8 +479,8 @@ h4{
             align-items: center;
             padding: 0px;
             width: auto;
-            height: 120px;
-            margin: 0px;
+            height: 110px;
+            margin: 25px;
         }
 
         .column {

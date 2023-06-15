@@ -173,7 +173,7 @@ nav a:hover{
             margin-left: 0px;
             background: var(--burgundy);
             width: 200px;
-
+            border-radius: 99px;
         }
 
         .mob-floating-button a{
@@ -276,7 +276,22 @@ h5{
     margin-right: auto;
     }
 
+.grid h2{
+            position: relative;
+            text-align: center;
+            top: 10px;
+            margin: 0px;
+            font-weight: 450;
+        }
 
+.grid p{
+            position: relative;
+            top: 25px;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            font-weight: 300;
+        }
 .grid > div{
      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
      padding: 10px;
@@ -397,7 +412,7 @@ h4{
 }
 
 .footer-logo{
-    width: 40%;
+    width: 20%;
 
 }
 h4{
@@ -635,7 +650,7 @@ h4{
             margin-left: 0px;
             background: var(--burgundy);
             width: 300px;
-
+            border-radius: 99px;
         }
 
         .floating-button a{
@@ -699,23 +714,6 @@ h4{
             grid-column-gap: 25px;
             grid-template-columns: repeat(2, 361px);
 
-        }
-
-        .grid h2{
-            position: relative;
-            text-align: center;
-            top: 10px;
-            margin: 0px;
-            font-weight: 450;
-        }
-
-        .grid p{
-            position: relative;
-            top: 25px;
-            margin: 0px;
-            padding: 10px;
-            text-align: center;
-            font-weight: 300;
         }
 
         .grid > div{
@@ -784,8 +782,8 @@ h4{
             align-items: center;
             padding: 0px;
             width: auto;
-            height: 120px;
-            margin: 0px;
+            height: 110px;
+            margin: 25px;
         }
 
         .column {
