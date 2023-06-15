@@ -297,6 +297,7 @@ h5{
      padding: 10px;
      background: white;
      height: 527px;
+     border-radius: 10px;
      }
 
 .placeholder-img{
@@ -720,6 +721,7 @@ h4{
             padding: 10px;
             background: white;
             margin-top: 20px
+            border-radius: 10px;
         }
 
         @media screen and (min-width: 1150px){
