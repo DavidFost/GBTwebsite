@@ -136,7 +136,7 @@ nav a:hover{
     top: 80px;
     width: 100%;
     height: 150px;
-    background: var(--burgundy);
+    background: rgba(122,59,59,0.5);
     display: flex;
     text-align: center;
     align-items: center;
@@ -155,12 +155,17 @@ nav a:hover{
 }
 .mobile-banner-h-container h2{
     color: white;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .mobile-offering-img{
     position: relative;
     z-index: -1;
+    object-fit: cover;
 }
 
 .mobile-banner img{
@@ -326,7 +331,8 @@ h4{
               box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
               display: flex;
               border-radius: 8px;
-              margin: 32px 0;
+              margin: 32px 10px;
+              border: solid 2px rgb(47,46,46);
             }
 
             .event .event-left {
@@ -339,7 +345,7 @@ h4{
               padding: 8px 48px;
               font-weight: bold;
               text-align: center;
-              border-radius: 8px 0 0 8px;
+              border-radius: 5px 0 0 5px;
             }
 
             .event .event-left .date {
@@ -892,7 +898,7 @@ h4{
               padding: 8px 48px;
               font-weight: bold;
               text-align: center;
-              border-radius: 8px 0 0 8px;
+              border-radius: 5px 0 0 5px;
             }
 
             .event .event-left .date {
