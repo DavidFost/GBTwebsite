@@ -62,3 +62,19 @@ def aberdeen():
 @views.route('/evangelism')
 def evangelism():
     return render_template("evangelism-outreach.html")
+
+@views.route('/first-lady')
+def first():
+    return render_template("first-lady.html")
+
+@views.route('/what-to-expect')
+def expect():
+    return render_template("what-to-expect.html")
+
+@views.route('/pastor')
+def pastor():
+    return render_template("our-pastor.html")
+
+@views.route('/belief')
+def belief():
+    return render_template("our-belief.html")

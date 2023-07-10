@@ -243,7 +243,7 @@ nav a:hover{
         }
 
 .topic-divider {
-    width: 150px;
+    width: 90%;
     position: relative;
     top: 10px;
     padding: 0px;
@@ -269,7 +269,7 @@ nav a:hover{
 }
 .history-container p{
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 100px;
 }
 .history-img{
@@ -576,7 +576,7 @@ h4{
 }
 
 .topic-divider {
-width: 200px;
+width: 80%;
 position: relative;
 top: 20px;
 padding: 0px;
@@ -603,7 +603,7 @@ border-radius: 5px;
 }
 .history-container p{
     font-size: 24px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 100px;
 }
 .history-img{
