@@ -2,8 +2,9 @@
     --nav-color: black;
     --nav-color2: rgb(223,213,213);
     --burgundy: rgb(122,59,59);     /*(86,0,34)*/
-    --grey: rgb(230, 223, 223);
+    --grey: rgb(237,237,237);
     --grey1: rgb(174, 158,158);
+
     --burgundy-overlay: rgba(122,59,59,0.5);
 
 }
@@ -134,7 +135,7 @@ nav a:hover{
   width: 100%;
   height: 500px;
   overflow: hidden; /* Enable vertical scrolling if the content overflows */
-
+  background: var(--burgundy-overlay);
 }
 
 /* Style the video element to cover the entire container */
@@ -464,6 +465,7 @@ h4{
           top: auto;
           width: 100%;
           height: 706px;
+          background: var(--burgundy-overlay);
         /*overflow: none; fixes scroll into whitespace - might be a problem - to fix (delete and set widths to 100%)*/
 
         }
@@ -735,7 +737,7 @@ h4{
         }
 
         .connect-with-us li:hover{
-            background: rgb(47,46,46);
+            background: var(--grey1);
             transition: background-color 0.5s ease;
         }
 
