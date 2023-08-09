@@ -275,7 +275,7 @@ nav a:hover{
 .history-img{
     height: 200px;
     float: left;
-    margin-right: 30px;
+    margin-right: 0px;
     margin-top: 40px;
     margin-bottom: 0px;
 
@@ -609,7 +609,7 @@ border-radius: 5px;
 .history-img{
     height: 400px;
     float: left;
-    margin-right: 30px;
+    margin-right: 0px;
     margin-top: 40px;
     margin-bottom: 0px;
 
