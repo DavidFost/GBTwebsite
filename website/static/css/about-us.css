@@ -29,7 +29,7 @@ header{
 
 
 .nav-logo-container{
-    width: 100%;
+    display: none;
 }
 
 .nav-logo{
@@ -78,6 +78,15 @@ nav{
     transition: transform 400ms ease-in-out;
 }
 
+.mobile-nav-logo-container{
+            width: 100%;
+        }
+.mobile-nav-logo{
+    width: auto;
+    height: 60px;
+    position: relative;
+    top: 10px;
+}
 nav ul{
     margin: 0;
     padding: 0;
@@ -401,8 +410,6 @@ h4{
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 7.5%;
-            margin-right: 4em;
 
         }
 
@@ -410,8 +417,9 @@ h4{
             all: unset;
             width: auto;
             height: 100px;
-            margin-right: 0px;
+            margin-right: 20px;
             margin-left: 0px;
+            margin-top: 12px;
 
         }
 
@@ -440,7 +448,9 @@ h4{
             font-size: 16px;
 
         }
-
+        .mobile-nav-logo-container{
+            display: none;
+        }
         nav a::before{
             content: '';
             display: block;
@@ -684,10 +694,8 @@ border-radius: 5px;
               padding: 20px;
               text-align: center;
               color: white;
-              margin-bottom: 50px;
-              margin-left: 75px;
-              margin-right: 75px;
-
+              margin-bottom: 75px;
+              width: 100%;
             }
 
         .column p{

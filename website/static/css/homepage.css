@@ -4,7 +4,7 @@
     --burgundy: rgb(122,59,59);     /*(86,0,34)*/
     --grey: rgb(237,237,237);
     --grey1: rgb(174, 158,158);
-
+    --splash-overlay: rgba(153,153,255,0.3);
     --burgundy-overlay: rgba(122,59,59,0.5);
 
 }
@@ -30,10 +30,17 @@ header{
 
 
 .nav-logo-container{
+    display: none;
+}
+.mobile-nav-logo-container{
     width: 100%;
 }
 
 .nav-logo{
+    display: none;
+
+}
+.mobile-nav-logo{
     width: auto;
     height: 60px;
     position: relative;
@@ -135,7 +142,7 @@ nav a:hover{
   width: 100%;
   height: 500px;
   overflow: hidden; /* Enable vertical scrolling if the content overflows */
-  background: var(--burgundy-overlay);
+  background: var(--splash-overlay);
 }
 
 /* Style the video element to cover the entire container */
@@ -163,7 +170,7 @@ nav a:hover{
     gap: 20px;
     padding: 0px;
     margin: 0px;
-    background: var(--burgundy);
+    background: rgba(51,51,77,.6);
 }
 
 .bottom-menu{
@@ -221,7 +228,7 @@ nav a:hover{
     }
 
 .floating-buttons-container li:hover {
-    background: rgb(47,46,46);
+    background: rgb(186,198,216);
     transition: background-color 0.5s ease; /* Change duration value to make the transition slower or faster */
     border-radius: 99px;
     }
@@ -241,7 +248,7 @@ nav a:hover{
 }
 
 .splash-image img{
-    width: 150px;
+    width: 55%;
     height: 150px;
 }
 
@@ -398,22 +405,27 @@ h4{
         .nav-toggle-label{
             display: none;
         }
-
+        .mobile-nav-logo-container{
+            display: none;
+        }
         .nav-logo-container{
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 7.5%;
-            margin-right: 4em;
+
 
         }
+        .mobile-nav-logo{
+            display: none;
 
+        }
         .nav-logo {
             all: unset;
             width: auto;
             height: 100px;
-            margin-right: 0px;
+            margin-right: 20px;
             margin-left: 0px;
+            margin-top: 12px;
 
         }
 
@@ -465,7 +477,7 @@ h4{
           top: auto;
           width: 100%;
           height: 706px;
-          background: var(--burgundy-overlay);
+          background: var(--splash-overlay);
         /*overflow: none; fixes scroll into whitespace - might be a problem - to fix (delete and set widths to 100%)*/
 
         }
@@ -495,7 +507,7 @@ h4{
             gap: 20px;
             padding: 0px;
             margin: 0px;
-            background: rgba(0,0,0,.25);
+            background: rgba(51,51,77,.6);
 
         }
 
@@ -588,7 +600,7 @@ h4{
 
         }
         .floating-buttons-container li:hover {
-            background: grey;
+            background: rgb(186,198,216);
             transition: background-color 0.5s ease; /* Change duration value to make the transition slower or faster */
 
         }
@@ -608,8 +620,8 @@ h4{
         }
 
         .splash-image img{
-            width: 210px;
-            height: 210px;
+            width: 800px;
+            height: 212px;
         }
 
         .grid-backdrop{
@@ -708,7 +720,7 @@ h4{
             padding-right: 38px;
             padding-top: 10px;
             position: absolute;
-            top: 250px;
+            top: 225px;
         }
 
         .connect-with-us li{
@@ -776,10 +788,8 @@ h4{
               padding: 20px;
               text-align: center;
               color: white;
-              margin-bottom: 50px;
-              margin-left: 75px;
-              margin-right: 75px;
-
+              margin-bottom: 75px;
+              width: 100%;
             }
 
         .column p{

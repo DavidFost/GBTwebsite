@@ -29,16 +29,7 @@ header{
 
 
 
-.nav-logo-container{
-    width: 100%;
-}
 
-.nav-logo{
-    width: auto;
-    height: 60px;
-    position: relative;
-    top: 10px;
-}
 
 
 .nav-toggle-label span,
@@ -64,6 +55,27 @@ header{
 
 .nav-toggle-label span::after{
     top: 7px;
+}
+.nav-logo-container{
+    display: none;
+}
+
+
+.mobile-nav-logo-container{
+    width: 100%;
+}
+
+.mobile-nav-logo{
+    width: auto;
+    height: 60px;
+    position: relative;
+    top: 10px;
+
+}
+
+.nav-logo{
+    display: none;
+
 }
 
 nav{
@@ -488,23 +500,31 @@ h4{
             display: none;
         }
 
+        .mobile-nav-logo-container{
+            display: none;
+        }
+
+        .mobile-nav-logo{
+            display: none;
+
+        }
+
         .nav-logo-container{
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 7.5%;
-            margin-right: 4em;
-
         }
 
         .nav-logo {
             all: unset;
             width: auto;
             height: 100px;
-            margin-right: 0px;
+            margin-right: 20px;
             margin-left: 0px;
+            margin-top: 12px;
 
         }
+
 
         nav {
             all: unset;
@@ -683,10 +703,8 @@ h4{
               padding: 20px;
               text-align: center;
               color: white;
-              margin-bottom: 50px;
-              margin-left: 75px;
-              margin-right: 75px;
-
+              margin-bottom: 75px;
+              width: 100%;
             }
 
         .column p{
