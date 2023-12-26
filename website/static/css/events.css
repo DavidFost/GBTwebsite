@@ -242,8 +242,9 @@ h5{
 }
 
 .buffer{
+    display:none;
+    }
 
-}
 
 
 
@@ -402,6 +403,7 @@ h4{
             }
 
             @media (max-width: 550px) {
+
               .event {
                 flex-direction: column;
               }
@@ -485,6 +487,7 @@ h4{
     display: none;
 }
 @media screen and (min-width: 820px){
+
 
         .highlights-container{
             all: unset;
@@ -739,6 +742,9 @@ h4{
         }
 
         @media screen and (max-width: 1150px){
+
+
+
             .column {
               display: none;
 
@@ -884,6 +890,9 @@ h4{
 
         }
         @media screen and (min-width: 1350px){
+
+
+
             .grid{
                 display: grid;
                 grid-template-columns: repeat(4, 319px);
@@ -971,6 +980,9 @@ h4{
             }
 
             @media (max-width: 550px) {
+
+
+
               .event {
                 flex-direction: column;
               }
@@ -1013,5 +1025,75 @@ h4{
             .spacer{
                 display: none;
             }
+
+}
+
+
+.mobile header{
+    height: 110px;
+    position: relative;
+
+}
+
+.mobile .mobile-nav-logo{
+    width: auto;
+    height: 75px;
+    position: relative;
+    top: 20px;
+}
+
+.mobile .nav-toggle-label span,
+.mobile .nav-toggle-label span::before,
+.mobile .nav-toggle-label span::after{
+
+    height: 4px;
+    width: 40px;
+    border-radius: 2px;
+
+}
+
+.mobile .nav-toggle-label span::before{
+    bottom: 10px;
+}
+
+.mobile .nav-toggle-label span::after{
+    top: 10px;
+}
+.mobile .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 110%;
+    display: flex;
+    align-items: center;
+}
+
+.mobile .nav-toggle:checked ~ nav{
+    height: 260px;
+
+}
+.mobile nav{
+    top: 99%;
+}
+.mobile nav a{
+    font-size: 30px;
+}
+
+
+
+
+
+.mobile .mobile-banner{
+    top: unset;
+    height: 200px;
+}
+
+
+.mobile .buffer{
+    width: 100%;
+    background: var(--burgundy);
+    display: relative;
+    height: 25px;
 }
 

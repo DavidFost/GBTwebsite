@@ -3,7 +3,51 @@
 <head>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../static/css/our-pastor.css">
-    <meta charset="UTF-8">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const body = document.querySelector('body');
+      const header = document.querySelector('header');
+      const nav = document.querySelector('nav');
+      const navToggle = document.querySelector('.nav-toggle');
+      const mobileNavLogo = document.querySelector('.mobile-nav-logo');
+      const navToggleLabel = document.querySelector('.nav-toggle-label');
+      const bannerHContainer = document.querySelector('.banner-h-container');
+
+
+      if (userAgent.includes('android') ||
+          userAgent.includes('webos') ||
+          userAgent.includes('iphone') ||
+          userAgent.includes('ipad') ||
+          userAgent.includes('ipod') ||
+          userAgent.includes('blackberry') ||
+          userAgent.includes('iemobile') ||
+          userAgent.includes('opera mini')) {
+
+        header.classList.add('mobile');
+        body.classList.add('mobile');
+        nav.classList.add('mobile');
+        mobileNavLogo.classList.add('mobile');
+        navToggleLabel.classList.add('mobile');
+        navToggle.classList.add('mobile');
+        bannerHContainer.classList.add('mobile');
+
+
+      } else {
+        header.classList.add('desktop');
+        body.classList.add('desktop');
+        nav.classList.add('desktop');
+        mobileNavLogo.classList.add('desktop');
+        navToggleLabel.classList.add('desktop');
+        navToggle.classList.add('desktop');
+        bannerHContainer.classList.add('desktop');
+
+      }
+    });
+  </script>
+
     <title>Greater Bethlehem Temple Church</title>
 </head>
 <body>
@@ -30,7 +74,7 @@
     <div class="about-container">
         <img src="../static/images/wide.jpg" class="about-img">
         <div class="banner-h-container">
-            <h2>Our History</h2>
+            <h2>Our Pastor</h2>
         </div>
         <div class="banner-msg">
             <p>Our vision at the Greater Bethlehem Temple Ministry is clear: to transform individuals into missionaries

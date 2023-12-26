@@ -27,8 +27,6 @@ header{
 }
 
 
-
-
 .nav-logo-container{
     display: none;
 }
@@ -48,14 +46,13 @@ header{
 
 }
 
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after{
     display: block;
     background: white;
     height: 2px;
-    width: 2em;
+    width: 50px;
     border-radius: 2px;
     position: relative;
 }
@@ -68,10 +65,13 @@ header{
 
 .nav-toggle-label span::before{
     bottom: 7px;
+
+
 }
 
 .nav-toggle-label span::after{
     top: 7px;
+
 }
 
 nav{
@@ -139,8 +139,8 @@ nav a:hover{
 /* Set the video container to the size you want */
 .video-container {
   position: relative;
-  width: 100%;
-  height: 500px;
+  width: 100%; /*100%*/
+  height: 500px; /*500px*/
   overflow: hidden; /* Enable vertical scrolling if the content overflows */
   background: var(--splash-overlay);
 }
@@ -244,11 +244,10 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 10px;
 }
 
 .splash-image img{
-    width: 55%;
+    width: 95%;
     height: 150px;
 }
 
@@ -386,7 +385,7 @@ h4{
             align-items: center;
         }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1000px){ /*769*/
 
         header{
             position: static;
@@ -476,9 +475,9 @@ h4{
           position: relative;
           top: auto;
           width: 100%;
-          height: 706px;
+          height: 706px; /*706px*/
           background: var(--splash-overlay);
-        /*overflow: none; fixes scroll into whitespace - might be a problem - to fix (delete and set widths to 100%)*/
+          overflow: none; /*fixes scroll into whitespace - might be a problem - to fix (delete and set widths to 100%)*/
 
         }
 
@@ -620,7 +619,7 @@ h4{
         }
 
         .splash-image img{
-            width: 800px;
+            width: 100%;
             height: 212px;
         }
 
@@ -647,7 +646,7 @@ h4{
             margin-top: 20px
             border-radius: 10px;
         }
-        @media screen and (min-width: 1150px){
+        @media screen and (min-width: 1200px){
             .grid{
                 display: grid;
                 grid-template-columns: repeat(3, 361px);
@@ -864,5 +863,136 @@ h4{
             display: none;
         }
 
+
+
 }
 
+
+.mobile header{
+    height: 110px;
+    position: relative;
+
+}
+
+.mobile .mobile-nav-logo{
+    width: auto;
+    height: 75px;
+    position: relative;
+    top: 20px;
+}
+
+.mobile .nav-toggle-label span,
+.mobile .nav-toggle-label span::before,
+.mobile .nav-toggle-label span::after{
+
+    height: 4px;
+    width: 40px;
+    border-radius: 2px;
+
+}
+
+.mobile .nav-toggle-label span::before{
+    bottom: 10px;
+}
+
+.mobile .nav-toggle-label span::after{
+    top: 10px;
+}
+.mobile .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 110%;
+    display: flex;
+    align-items: center;
+}
+
+.mobile .nav-toggle:checked ~ nav{
+    height: 260px;
+
+}
+.mobile nav{
+    top: 99%;
+}
+.mobile nav a{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.mobile .video-container{
+    height: 400px;
+}
+
+.mobile .splash-image-container{
+    bottom: 220px;
+    height: 100px;
+    width: 100%;
+}
+.mobile .splash-image-container .splash-image{
+    height: 100%;
+    width: 95%;
+}
+
+.mobile .floating-buttons-container{
+    bottom: 120px;
+}
+.mobile .floating-buttons-container .floating-buttons ul a{
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center c uontent */
+
+}
+.mobile .floating-buttons-container .floating-buttons ul a li{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    background: rgb(122,59,59);
+    border-radius: 5px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+}
+
+.mobile .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px;
+    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+.mobile .grid > div{
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
+     padding: 10px;
+     background: white;
+     height: 600px;
+     margin-top: 50px;
+     border-radius: 10px;
+     }
+
+.mobile .grid div a{
+    font-size: 20px;
+}
+
+.mobile .grid div p{
+    font-size: 20px;
+}
+
+.mobile .grid div a img{
+    width: 90%;
+    height: unset;
+
+}
