@@ -935,8 +935,8 @@ h4{
     width: 100%;
 }
 .mobile .splash-image-container .splash-image{
-    height: 100%;
-    width: 95%;
+    height: auto;
+    width: 85%;
 }
 
 .mobile .floating-buttons-container{
