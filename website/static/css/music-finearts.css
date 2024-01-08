@@ -479,7 +479,7 @@ h4{
 
 
 
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1000px){
 
 
         header{
@@ -1005,7 +1005,7 @@ h4{
 
 
         }
-        @media screen and (max-width: 949px){
+        @media screen and (max-width: 1000px){
             .connect-back{
                 background: unset;
             }

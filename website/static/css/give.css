@@ -140,9 +140,6 @@ nav a:hover{
 
 }
 
-.banner {
-  display: none;
-}
 
 .mobile-banner{
     position: relative;
@@ -222,18 +219,7 @@ nav a:hover{
 
 }
 
-.banner-msg{
-    position: relative;
-    top: 150px;
-    display: flex;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: none;
 
-}
 
 .banner-msg p{
     color: white;
@@ -398,7 +384,7 @@ h5{
 
 .address{
     margin: 25px;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 
@@ -464,7 +450,141 @@ h4{
         text-align: center;
 }
 
-@media screen and (min-width: 820px){
+        .footer-divider {
+              position: relative;
+              top: 25px;
+              width: 0px;
+              height: 175px;
+              background-color: black;
+              border: 1px dotted white;
+
+            }
+
+
+
+        .social-logo{
+            all: unset;
+            display: flex;
+            width: 100%;
+        }
+
+        .footer-links{
+            display: none;
+
+        }
+        .footer-links p{
+            color: white;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        h4{
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0px;
+            margin-top: 20px;
+            padding: 0px;
+        }
+
+
+}
+.banner {
+          all: unset;
+          background: rgba(122,59,59,0.5);
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+.banner-h-container {
+                all: unset;
+                width: 75%;
+                position: relative;
+                top: 55px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .banner-msg{
+                display: none;
+            }
+    .giving-img {
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+
+.floating-button-container {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-button {
+    padding: 0px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.floating-button ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.floating-button li {
+    padding: 10px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px;
+    background: var(--burgundy);
+    width: 300px;
+    border-radius: 99px;
+}
+.floating-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.banner-h-container h2 {
+    all: unset;
+    color: white;
+    font-weight: 400;
+    font-size: 35px;
+}
+.banner-msg p {
+    all: unset;
+    color: white;
+    font-weight: 300;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 75%;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px){
 
         header{
             position: static;
@@ -473,7 +593,9 @@ h4{
             justify-content: center;
             height: 120px;
         }
-
+        h4{
+            color: white;
+        }
         .menu{
             display: flex;
             justify-content: center;
@@ -568,19 +690,7 @@ h4{
         }
 
 
-        .banner {
-          all: unset;
-          background: rgba(122,59,59,0.5);
-          width: 100%;
-          height: 400px;
-          overflow: hidden;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-        }
+
 
         .giving-img{
           all: unset;
@@ -591,19 +701,21 @@ h4{
           z-index: -2;
 
         }
+        .banner-h-container {
+                all: unset;
+                width: 80%;
+                margin: 0;
+                text-align: center;
+            }
+            .banner-msg{
+                display: flex;
+                width: 100%;
+                margin: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
 
-        .banner-h-container{
-            all: unset;
-            position: relative;
-            top: -15px;
-            display: flex;
-            width: 100%;
-            margin: 0;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-
-        }
+            }
 
 
         .banner-h-container h2{
@@ -615,16 +727,7 @@ h4{
 
         }
 
-        .banner-msg{
-            all: unset;
-            display: flex;
-            width: 100%;
-            margin: 0;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
 
-        }
 
         .banner-msg p{
             all: unset;
@@ -747,15 +850,7 @@ h4{
             border-radius: 10px;
         }
 
-        @media screen and (min-width: 1150px){
-            .grid{
-                display: grid;
-                grid-template-columns: repeat(3, 361px);
-                }
-            .grid-backdrop{
-                height: 1200px;
-            }
-        }
+
 
         .pledge-container{
             background: white;
@@ -811,14 +906,8 @@ h4{
             margin: 25px;
         }
 
-        .column {
-              all: unset;
-              padding: 20px;
-              text-align: center;
-              color: white;
-              margin-bottom: 75px;
-              width: 100%;
-            }
+
+
 
         .column p{
             position: relative;
@@ -829,11 +918,60 @@ h4{
             padding: 0px;
             font-weight: 100;
         }
+        .column{
+            display: none;
+        }
+        .footer-links-mobile{
+            display: none;
+        }
 
-        @media screen and (max-width: 1150px){
+            .mobile-banner{
+                display: none;
+            }
+        .footer-links{
+            all: unset;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        }
+@media screen and (min-width: 1150px){
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3, 361px);
+                }
+            .grid-backdrop{
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .banner-h-container {
+                all: unset;
+                width: 80%;
+                margin: 0;
+                text-align: center;
+            }
+            .banner-msg{
+                display: flex;
+                width: 100%;
+                margin: 20px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+            }
             .column {
-              display: none;
-
+              all: unset;
+              padding: 20px;
+              text-align: center;
+              color: white;
+              margin-bottom: 75px;
+              width: 100%;
+            }
+        }
+@media screen and (max-width: 1150px){
+            .column{
+                display: ;
             }
             .footer-divider{
                 display: none;
@@ -842,57 +980,21 @@ h4{
                 display: none;
             }
         }
-        .footer-divider {
-              position: relative;
-              top: 25px;
-              width: 0px;
-              height: 175px;
-              background-color: black;
-              border: 1px dotted white;
 
-            }
 
-        .socials{
-            all: unset;
-            display: flex;
-            width: 200px;
-            position: relative;
-            justify-content: center;
-            align-items: center;
+.banner {
+          all: unset;
+          background: rgba(122,59,59,0.5);
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
         }
-
-        .social-logo{
-            all: unset;
-            display: flex;
-            width: 100%;
-        }
-
-        .footer-links{
-            all: unset;
-            margin-left: 100px;
-            margin-right: 100px;
-
-        }
-        .footer-links p{
-            color: white;
-            font-size: 12px;
-        }
-
-        h4{
-            color: white;
-            font-size: 24px;
-            font-weight: 400;
-            text-align: center;
-            margin: 0px;
-            margin-top: 20px;
-            padding: 0px;
-        }
-        .footer-links-mobile{
-            display: none;
-        }
-
-}
-
 
 .mobile header{
     height: 110px;
@@ -946,16 +1048,37 @@ h4{
 }
 
 
+.mobile .banner{
+    height: 280px;
+}
+.mobile .banner .banner-msg{
+    display: none;
+}
+.mobile .banner .banner-h-container h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+.mobile .banner .banner-h-container {
+    all: unset;
+    margin-bottom: 40px;
+}
+.mobile .floating-button li {
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+}
+.mobile .floating-button {
+    margin-top: 0px;
 
-
-
-.mobile .mobile-banner{
-    top: unset;
-    height: 200px;
 }
 
-
-.mobile .mob-floating-button{
-    margin-top: 125px;
-
+.mobile .address{
+    margin-top: 0px;
 }

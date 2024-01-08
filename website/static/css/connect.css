@@ -334,6 +334,7 @@ h4{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+
     }
 
 
@@ -427,7 +428,7 @@ h4{
 }
 
 
-@media screen and (min-width: 820px){
+@media screen and (min-width: 1000px){
 
         .highlights-container{
             all: unset;
@@ -746,7 +747,7 @@ h4{
             margin-top: 0px;
             grid-row-gap: 50px;
             grid-column-gap: 25px;
-            grid-template-columns: repeat(2, 319px);
+            grid-template-columns: repeat(3, 319px);
         }
 
         .image {

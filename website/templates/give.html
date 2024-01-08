@@ -14,9 +14,10 @@
       const navToggle = document.querySelector('.nav-toggle');
       const mobileNavLogo = document.querySelector('.mobile-nav-logo');
       const navToggleLabel = document.querySelector('.nav-toggle-label');
-      const mobileBanner = document.querySelector('.mobile-banner');
-      const mobFloatingButton = document.querySelector('.mob-floating-button');
-
+      const banner = document.querySelector('.banner');
+      const bannerMsg = document.querySelector('.banner-msg');
+      const floatingButton = document.querySelector('.floating-button');
+      const address = document.querySelector('.address');
 
       if (userAgent.includes('android') ||
           userAgent.includes('webos') ||
@@ -33,8 +34,10 @@
         mobileNavLogo.classList.add('mobile');
         navToggleLabel.classList.add('mobile');
         navToggle.classList.add('mobile');
-        mobileBanner.classList.add('mobile');
-        mobFloatingButton.classList.add('mobile');
+        bannerMsg.classList.add('mobile');
+        banner.classList.add('mobile');
+        floatingButton.classList.add('mobile');
+        address.classList.add('mobile');
 
 
       } else {
@@ -44,9 +47,10 @@
         mobileNavLogo.classList.add('desktop');
         navToggleLabel.classList.add('desktop');
         navToggle.classList.add('desktop');
-        mobileBanner.classList.add('desktop');
-        mobFloatingButton.classList.add('desktop');
-
+        bannerMsg.classList.add('desktop');
+        banner.classList.add('desktop');
+        floatingButton.classList.add('desktop');
+        address.classList.add('desktop');
       }
     });
   </script>
@@ -93,18 +97,18 @@
         </div>
     </div>
 
-    <div class="mobile-banner">
-        <img src="../static/images/mob-offering.jpg" class="mobile-offering-img">
-<!--        <div class="blk-buffer"></div>-->
+<!--    <div class="mobile-banner">-->
+<!--        <img src="../static/images/basket.jpg" class="mobile-offering-img">-->
+<!--&lt;!&ndash;        <div class="blk-buffer"></div>&ndash;&gt;-->
 
-        <div class="mob-floating-button-container">
-            <div class="mob-floating-button">
-                <ul>
-                    <li><a href="https://www.shelbygiving.com/App/Form/2811f602-ebe8-43c2-b315-6d7925d6f0b5">GIVE NOW</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<!--        <div class="mob-floating-button-container">-->
+<!--            <div class="mob-floating-button">-->
+<!--                <ul>-->
+<!--                    <li><a href="https://www.shelbygiving.com/App/Form/2811f602-ebe8-43c2-b315-6d7925d6f0b5">GIVE NOW</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="buffer"></div>
     <div class="address">
@@ -136,8 +140,9 @@
                     <h2>Aberdeen Giving</h2>
                 </a>
                 <hr class="card-divider">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,
-                        ut rhoncus mauris eleifend at.</p>
+                  <p>
+                      Thank you for being a cheerful giver. Your generosity supports the various ministries at GBT.
+                  </p>
                 <a href="https://www.shelbygiving.com/App/Form/8ca3fc26-2266-44f4-a627-2d40c3f8ebf7">
                     <img src="../static/images/aberdeen.webp" class="placeholder-img">
                 </a>
@@ -147,8 +152,9 @@
                     <h2>Daycare & AfterSchool Payments</h2>
                 </a>
                 <hr class="card-divider">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,
-                        ut rhoncus mauris eleifend at.</p>
+                  <p>
+                      Pay Tuition and Fees for Daycare, AfterSchool and Academies here.
+                  </p>
                     <a href="https://www.shelbygiving.com/App/Form/884a4886-2c97-4842-a3d6-f3c9fe16d207">
                         <img src="../static/images/lsa.png" class="placeholder-lsa">
                     </a>
@@ -158,34 +164,34 @@
                     <h2>Landmark Temple Giving</h2>
                 </a>
                 <hr class="card-divider">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,
-                        ut rhoncus mauris eleifend at.</p>
+                  <p>We're on a mission to help our sister church, Landmark Temple of Holly Springs, Mississippi,
+                      build a new worship facility.</p>
                 <a href="https://www.shelbygiving.com/App/Form/6944dcd3-125b-4190-9796-52dcc1ef494a">
                         <img src="../static/images/landmark.jpg" class="placeholder-img">
                     </a>
             </div>
-            <div>
-                <a style="text-decoration: none;color:black;" href="https://www.shelbygiving.com/App/Form/a8603902-ecc5-42a9-9016-10debbe36444">
-                    <h2>Fellowship Hall Giving</h2>
-                </a>
-                <hr class="card-divider">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,
-                        ut rhoncus mauris eleifend at.</p>
-                <a href="https://www.shelbygiving.com/App/Form/a8603902-ecc5-42a9-9016-10debbe36444">
-                        <img src="../static/images/table2.jpg" class="placeholder-img">
-                    </a>
-            </div>
-            <div>
-                <a style="text-decoration: none;color:black;" href="https://www.shelbygiving.com/App/Form/1074db63-a5eb-4e1a-8fb8-e138fc20999c">
-                    <h2>Family Life Center</h2>
-                </a>
-                <hr class="card-divider">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,
-                        ut rhoncus mauris eleifend at.</p>
-                <a href="https://www.shelbygiving.com/App/Form/1074db63-a5eb-4e1a-8fb8-e138fc20999c">
-                        <img src="../static/images/rainbow.jpg" class="placeholder-img">
-                    </a>
-            </div>
+<!--            <div>-->
+<!--                <a style="text-decoration: none;color:black;" href="https://www.shelbygiving.com/App/Form/a8603902-ecc5-42a9-9016-10debbe36444">-->
+<!--                    <h2>Fellowship Hall Giving</h2>-->
+<!--                </a>-->
+<!--                <hr class="card-divider">-->
+<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,-->
+<!--                        ut rhoncus mauris eleifend at.</p>-->
+<!--                <a href="https://www.shelbygiving.com/App/Form/a8603902-ecc5-42a9-9016-10debbe36444">-->
+<!--                        <img src="../static/images/table2.jpg" class="placeholder-img">-->
+<!--                    </a>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <a style="text-decoration: none;color:black;" href="https://www.shelbygiving.com/App/Form/1074db63-a5eb-4e1a-8fb8-e138fc20999c">-->
+<!--                    <h2>Family Life Center</h2>-->
+<!--                </a>-->
+<!--                <hr class="card-divider">-->
+<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat felis,-->
+<!--                        ut rhoncus mauris eleifend at.</p>-->
+<!--                <a href="https://www.shelbygiving.com/App/Form/1074db63-a5eb-4e1a-8fb8-e138fc20999c">-->
+<!--                        <img src="../static/images/rainbow.jpg" class="placeholder-img">-->
+<!--                    </a>-->
+<!--            </div>-->
         </div>
 
 
