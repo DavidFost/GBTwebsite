@@ -250,6 +250,7 @@ h5{
     display: grid;
     place-items: center;
     height: auto;
+    padding-bottom: 50px;
 
 }
 .more-grid-backdrop{
@@ -258,9 +259,19 @@ h5{
 }
 .buffer{
         width: 100%;
-        height: 25px;
+        height: auto;
+        text-align: center;
         background: var(--burgundy);
+        padding-bottom: 1px;
+        padding-top: 1px;
 }
+.buffer h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
 .blk-buffer{
             width: 100%;
             height: 25px;
@@ -818,7 +829,8 @@ h4{
         }
         .buffer{
             width: 100%;
-            height: 25px;
+            height: auto;
+            text-align: center;
             background: var(--burgundy);
         }
 
@@ -832,7 +844,8 @@ h4{
             background: var(--burgundy);
             display: grid;
             place-items: center;
-            height: 2000px;
+            height: auto;
+            padding-bottom: 50px;
         }
 
         .grid{
@@ -941,7 +954,7 @@ h4{
                 }
             .grid-backdrop{
                 height: auto;
-                padding-top: 50px;
+                padding-top: 25px;
                 padding-bottom: 50px;
             }
 

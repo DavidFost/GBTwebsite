@@ -39,6 +39,10 @@ def events():
 def youth():
     return render_template("youth.html")
 
+@views.route('/childrens_ministry')
+def childrens_ministry():
+    return render_template("childrens_ministry.html")
+
 @views.route('/arts')
 def arts():
     return render_template("music-finearts.html")

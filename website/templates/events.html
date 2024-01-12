@@ -51,6 +51,18 @@
     });
   </script>
 
+    <script>
+    function openPopup(src, title, description) {
+        document.getElementById('popupTitle').innerText = title;
+        document.getElementById('popupImage').src = src;
+        document.getElementById('popupContainer').classList.add('active');
+    }
+
+    function closePopup() {
+        document.getElementById('popupContainer').classList.remove('active');
+    }
+</script>
+
     <title>Greater Bethlehem Temple Church</title>
 </head>
 <body>
@@ -89,6 +101,12 @@
             </p>
         </div>
     </div>
+
+
+
+
+
+
 <!--    <div class="mobile-banner">-->
 <!--        <div class="mobile-banner-h-container">-->
 <!--            <h2>EVENTS</h2>-->
@@ -107,52 +125,64 @@
 
         <div class="grid">
             <div>
-                <div class="image">
-                    <img src="../static/images/logo.png" class="image__img">
+                <div class="image" onclick="openPopup('../static/images/basketball.jpg', 'Event Title 1', 'Event overview 1')">
+                    <img src="../static/images/basketball.jpg" class="image__img">
 		            <div class="image__overlay image__overlay--primary">
-			        <div class="image__title">Event Title</div>
+			        <div class="image__title" style="text-align:center;">Youth Basketball League</div>
 			        <p class="image__description">
-				        Event overview
+				        click for more info
 			        </p>
 		            </div>
 	            </div>
             </div>
             <div>
-                <div class="image">
-                    <img src="../static/images/logo.png" class="image__img">
+                <div class="image" onclick="openPopup('../static/images/p_f.jpg', 'Event Title 2', 'Event overview 2')">
+                    <img src="../static/images/p_f.jpg" class="image__img">
 		            <div class="image__overlay image__overlay--primary">
-			        <div class="image__title">Event Title</div>
+			        <div class="image__title"style="text-align:center;">New Year's Fasting and Prayer</div>
 			        <p class="image__description">
-				        Event overview
+				        Fasting and Prayer every Mon, Tues, and Wed of January
 			        </p>
 		            </div>
 	            </div>
             </div>
             <div>
-                <div class="image">
+                <div class="image" onclick="openPopup('../static/images/logo.png', 'Event Title 3', 'Event overview 3')">
                     <img src="../static/images/logo.png" class="image__img">
 		            <div class="image__overlay image__overlay--primary">
-			        <div class="image__title">Event Title</div>
+			        <div class="image__title"style="text-align:center;">Have An Announcement?</div>
 			        <p class="image__description">
-				        Event overview
+				        Contact Communications Dept.
 			        </p>
 		            </div>
 	            </div>
+            </div>
+            <div>
+                <div class="image" onclick="openPopup('../static/images/logo.png', 'Event Title 4', 'Event overview 4')">
+                    <img src="../static/images/logo.png" class="image__img">
+		            <div class="image__overlay image__overlay--primary">
+			        <div class="image__title"style="text-align:center;">Have An Announcement?</div>
+			        <p class="image__description">
+				        Contact Communications Dept.
+			        </p>
+		            </div>
+	            </div>
+            </div>
 
-            </div>
-            <div>
-                <div class="image">
-                    <img src="../static/images/logo.png" class="image__img">
-		            <div class="image__overlay image__overlay--primary">
-			        <div class="image__title">Event Title</div>
-			        <p class="image__description">
-                        Event overview</p>
-		            </div>
-	            </div>
-            </div>
 
         </div>
-        <div class="more-grid-backdrop">
+                <div class="more-grid-backdrop" onclick="closePopup()"></div>
+
+    <div class="popup-container" id="popupContainer">
+        <div class="popup-header" onclick="closePopup()">
+            <span class="image__title" id="popupTitle"></span>
+            <span class="close-btn" onclick="closePopup()" style="font-size: 25px; padding-right: 15px;
+            padding-left: 10px;">x</span>
+        </div>
+        <div class="popup-content">
+            <img src="" alt="Popup Image" class="popup-image" id="popupImage">
+        </div>
+    </div>
 
         </div>
     </div>
@@ -163,7 +193,7 @@
                     <hr class="announce-divider">
 
 <div class="calendar">
-    <iframe src="https://embed.styledcalendar.com/#Qhse99DB1rUHGgqGzdZ3" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+    <iframe src="https://embed.styledcalendar.com/#YxExS2pPfeLBhJzgGGwX" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
     <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 </div>
 
