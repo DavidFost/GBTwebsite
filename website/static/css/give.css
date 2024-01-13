@@ -307,7 +307,7 @@ h5{
      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .2);
      padding: 10px;
      background: white;
-     height: 527px;
+     height: 450px;
      border-radius: 10px;
      }
 
@@ -316,7 +316,7 @@ h5{
     margin-top: 0px;
     margin-bottom: 0px;
     width: 319px;
-    height: 311px;
+    height: auto;
     border: 3px solid var(--burgundy);
     position: relative;
     top: 45px;
@@ -397,7 +397,17 @@ h5{
     margin: 25px;
     margin-top: 50px;
 }
-
+.ministries-divider{
+    width: 120px;
+    position: relative;
+    top: -5px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: none;
+    border-radius: 5px;
+}
 
 h4{
     position: relative;
@@ -820,7 +830,8 @@ h4{
         }
 
         .offering-img{
-            width: 100%;
+            width: auto;
+            height: 300px;
         }
         .blk-buffer{
             width: 100%;
