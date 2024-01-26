@@ -911,9 +911,10 @@ h4{
             padding-right: 38px;
         }
         .grid-backdrop{
-            background: white;
+            background: var(--grey2);
             display: grid;
             place-items: center;
+            padding-right: 10px;
 
         }
 
@@ -1040,6 +1041,26 @@ h4{
     border-radius: 2px;
 
 }
+
+.join-button {
+      margin-left: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: rgb(11,89,247);
+      color: white;
+      border: 2px solid rgb(11,89,247);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .join-button:hover {
+      background-color: rgb(11,89,247, .5);
+      border: 2px solid rgb(11,89,247, .5);
+    }
 
 .mobile .nav-toggle-label span::before{
     bottom: 10px;
