@@ -972,6 +972,7 @@ h4{
 .image__title {
 	font-size: 2em;
 	font-weight: bold;
+	text-align: center;
 }
 
 .image__description {
